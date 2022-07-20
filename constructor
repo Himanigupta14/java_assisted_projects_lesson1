@@ -1,0 +1,43 @@
+package assistedproject;
+
+public class constructor {
+	int EmpId;
+	String name;
+	int salary;
+	String Department;
+	
+	
+	
+	//Default Constructor
+	public constructor() {
+		EmpId=2527;
+		name="Himani Gupta";
+		salary=900000;
+		Department="Software Engineer";
+		
+		System.out.println("This is a default Constructor");
+	}
+	
+	//Parameterized Constructor
+	public constructor(int EmployeeId,String Name,int Salary,String department) {
+		this.EmpId=EmployeeId;
+		this.name=Name;
+	     this.salary=Salary;
+		this.Department=department;
+	}
+	
+	public void display()
+	{
+		System.out.println(EmpId+" "+ name+" "+Department+" "+salary);
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		constructor obj=new constructor();
+		obj.display();
+		constructor obj2=new constructor(12,"abhishek",25000,"MCA");
+		obj2.display();
+
+	}
+
+}
