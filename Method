@@ -1,0 +1,49 @@
+package assistedproject;
+
+//public class method
+
+	class Methodsecond{
+		void B() {
+			System.out.println("You are in second method");
+		}
+		Methodsecond(){
+			System.out.println("This is second constructor");//It is called at the time of creation of object of class Method2
+		}
+	}
+
+	public class method{
+		
+		void A() {
+			System.out.println("You are in same class");
+		}
+		
+		//Method overloading
+		void A(int n) {
+			int fact=1;
+			for(int i=1;i<=n;i++) {
+				fact=fact*i;
+				
+			}
+			System.out.println(fact);
+		}
+		
+		//Constructor
+		 public method(){
+		
+			 System.out.println("This is constructor"); //It is called at the time of creation of object of class Method
+				
+		}
+		
+
+
+
+	public static void main(String[] args) {
+		method obj=new method();
+		Methodsecond obj1=new Methodsecond();
+		obj1.B();
+		obj.A();
+	    obj.A(5);
+
+	}
+
+}
